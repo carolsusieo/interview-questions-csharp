@@ -1,0 +1,27 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="interviewCSharp/StringExamples.cs">
+    <Files>
+      <File FileName="interviewCSharp/List.cs" Line="118" Column="16" />
+      <File FileName="interviewCSharp/LinkedListExample.cs" Line="72" Column="31" />
+      <File FileName="interviewCSharp/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="interviewCSharp/DoubleLinkedList.cs" Line="85" Column="48" />
+      <File FileName="interviewCSharp/StringExamples.cs" Line="26" Column="47" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="interviewCSharp" expanded="True">
+            <Node name="StringExamples.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <FunctionBreakpoint line="1" column="1" function="reverseWords" language="C#" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
