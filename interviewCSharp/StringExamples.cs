@@ -22,8 +22,6 @@ namespace interviewCSharp
 			}	 
 			// split to words by space
 			String[] arr = s.Split (' ');
-			for (int  j = 0; j < arr.Length; j++)
-				Console.WriteLine (arr [j]);
 			String sb = "";
 			for (int i = arr.Length - 1; i >= 0; --i) {
 				if (!(arr[i].Equals(""))) {
@@ -31,7 +29,6 @@ namespace interviewCSharp
 					sb = sb.Insert(sb.Length," ");
 				}
 			}
-			Console.WriteLine ("length" + sb.Length);
 			return sb.Length == 0 ? "" : sb.Substring( 0,sb.Length -1);
 		
 		}

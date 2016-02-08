@@ -3,7 +3,6 @@ namespace interviewCSharp
 {
 using LinkedListExample;
 using System;
-
 namespace LinkedListExampleClient
 {
 	class Program
@@ -86,7 +85,48 @@ namespace LinkedListExampleClient
 			char c=mystring.firstNonRepeatedCharacter(str);
 			Console.WriteLine("\nThe first non repeated character in '" + str + "' is :  " + c);
 
+			BinaryTree<int> btree = new BinaryTree<int>();
+			//btree.Root = new BinaryTreeNode<int>(1);
+			//btree.Root.Left = new BinaryTreeNode<int>(2);
+			//btree.Root.Right = new BinaryTreeNode<int>(3);
 
+			//btree.Root.Left.Left = new BinaryTreeNode<int>(4);
+			//btree.Root.Right.Right = new BinaryTreeNode<int>(5);
+
+			//btree.Root.Left.Left.Right = new BinaryTreeNode<int>(6);
+			//btree.Root.Right.Right.Right = new BinaryTreeNode<int>(7);
+
+			//btree.Root.Right.Right.Right.Right = new BinaryTreeNode<int>(8);
+				Random rnd = new Random();
+				int j;
+				for (int i = 0; i < 8; i++) {
+					j = rnd.Next (1, 20);
+					Console.Write (j + ",");
+					btree.Add (j);
+				}
+				Console.WriteLine ("");
+					// manual sorting?  
+				btree.PreorderTraversal (btree.Root);
+				btree.Add (4);
+				Console.WriteLine ("\n Added 4");
+				btree.InorderTraversal (btree.Root);
+				Console.WriteLine ("\n Remove 4");
+
+				btree.Remove (4);
+				btree.InorderTraversal (btree.Root);
+
+				Arrays arr = new Arrays();
+				//Console.WriteLine("\nfind dup int:" + arr.FindDuplicateInt ());
+
+				Console.WriteLine ("\nfind missing int: " + arr.FindMissingInt ());
+				int [] arr2 = {-1,6,-2,-3,5,-7,5,-10,0,1,9,1,-2};
+				int start;
+				int end;
+				Console.WriteLine ("\nfind best subsequence total: " + arr.FindBestSubsequence(arr2,out start, out end) + "start:"+ start + "end:" + end);
+				Console.WriteLine ("\nfind best contiguous total: " + arr.HighestContiguousSum(arr2,out start, out end) + "start:"+ start + "end:" + end);
+				Console.WriteLine ("\n2 largest: " + arr.sumTwoLargest (arr2));
+
+				Console.WriteLine("\nsum 3 largest: " + arr.sumNLargest(arr2,3));
 
 		}
 	}
